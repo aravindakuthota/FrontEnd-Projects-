@@ -6,28 +6,52 @@
   <title>My Frontend Projects</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #eee;
       margin: 2rem;
-      background: #f0f0f0;
-      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
     }
     h1 {
-      color: #007acc;
+      font-weight: 700;
+      color: #61dafb;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      color: #bbb;
     }
     ul {
-      list-style-type: none;
-      padding-left: 0;
+      list-style: none;
+      padding: 0;
+      width: 100%;
+      max-width: 400px;
     }
     li {
-      margin: 1rem 0;
+      background: #1e1e1e;
+      margin-bottom: 1rem;
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+    li:hover {
+      background-color: #333;
     }
     a {
       text-decoration: none;
-      color: #007acc;
-      font-weight: bold;
+      color: #61dafb;
+      font-weight: 600;
+      font-size: 1.25rem;
+      display: block;
     }
+    a:focus,
     a:hover {
       text-decoration: underline;
+      outline: none;
     }
   </style>
 </head>
@@ -35,9 +59,3 @@
   <h1>Welcome to My Frontend Projects</h1>
   <p>Click on a project to view:</p>
   <ul>
-    <li><a href="./Businesscard/">Businesscard</a></li>
-    <li><a href="./Google- clone">Google- cloner</a></li>   
-    <!-- Add more projects here as needed -->
-  </ul>
-</body>
-</html>
